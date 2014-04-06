@@ -2,7 +2,7 @@ var loadMap = function(position) {
   var coords = position.coords;
   userPosition = [coords.latitude, coords.longitude];
 
-  var mappy = L.mapbox.map("mappy", "pzula.h69mf89n", { zoomControl: false }).setView(userPosition, 10);
+  var mappy = L.mapbox.map("mappy", "pzula.hnfnp659", { zoomControl: false }).setView(userPosition, 10);
   new L.Control.Zoom({ position: 'topright' }).addTo(mappy);
   Map.mappy = mappy;
 
@@ -27,7 +27,7 @@ var loadMap = function(position) {
       var list = $(".listings");
       $.each(data, function(index, val){
           var street = val.address.street
-          
+
           if (street == null ) {
             street = ""
           } else {

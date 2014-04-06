@@ -9,7 +9,7 @@
       <h3 class="name"><%= @market.name %></h3>
       <div id="directions">
         <div id="map">
-          <img src="http://api.tiles.mapbox.com/v3/pzula.h69mf89n/pin-m-star(<%= @market.address.lng %>,<%= @market.address.lat %>)/<%= @market.address.lng %>,<%= @market.address.lat %>,15/750x300.png">
+          <img src="http://api.tiles.mapbox.com/v3/pzula.hnfnp659/pin-m-star(<%= @market.address.lng %>,<%= @market.address.lat %>)/<%= @market.address.lng %>,<%= @market.address.lat %>,15/750x300.png">
         </div>
         <%= render partial: 'address', locals: { market: @market } %>
       </div>
